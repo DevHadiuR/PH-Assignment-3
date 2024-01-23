@@ -1,38 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PH Assingnment 3</title>
     <!-- tailwind and daisy ui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-    .font-manrope{
-        font-family: 'Manrope', sans-serif;
-    }
-</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
     <!-- awesome icons  -->
-    <script src="https://kit.fontawesome.com/29ef7800bd.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/29ef7800bd.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- tailwind custom color -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'common-red': '#FF4240',
-              }
-            }
-          }
-        }
-      </script>
-</head>
-<body>
-    
-</body>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "common-red": "#FF4240",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="container mx-auto my-12 px-4 md:px-10 lg:px-20">
+      <nav></nav>
+      <!-- banner section -->
+      <div class="w-auto h-auto">
+        <div class="carousel">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="/B9A3-Hockeys-main/Images/1.png" class="w-full" />
+            <div
+              class="absolute transform -translate-y-1/2 left-5 right-5 top-3/4"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-black text-white opacity-90"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white opacity-90"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="/B9A3-Hockeys-main/Images/1.png" class="w-full" />
+            <div
+              class="absolute transform -translate-y-1/2 left-5 right-5 top-3/4"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white opacity-90"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white opacity-90"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="/B9A3-Hockeys-main/Images/1.png" class="w-full" />
+            <div
+              class="absolute transform -translate-y-1/2 left-5 right-5 top-3/4"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-black text-white opacity-90"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-black text-white opacity-90"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="/B9A3-Hockeys-main/Images/1.png" class="w-full" />
+            <div
+              class="absolute transform -translate-y-1/2 left-5 right-5 top-3/4"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-black text-white opacity-90"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-black text-white opacity-90"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-black rounded-2xl text-white p-5 md:p-2 w-full md:w-4/12 lg:w-4/12 h-auto md:-translate-y-32 md:translate-x-[28rem]"
+        >
+          <h4 class="text-xl md:text-sm font-extrabold opacity-90">
+            Meet all the heroes from the field
+          </h4>
+          <p class="text-sm opacity-70">
+            You see heroes and villein are always on tv screen but the real
+            heroes are on the field.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto"></main>
+    <footer></footer>
+  </body>
 </html>
